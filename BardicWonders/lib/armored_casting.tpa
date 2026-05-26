@@ -1,5 +1,8 @@
 COPY ~%MOD_FOLDER%/armored_casting~ ~override~
 
+LAF DESTRUCTO_REMOVE_HLA INT_VAR class = 5 STR_VAR remove_ability = ~AP_#0HLA_D~ END
+LAF DESTRUCTO_REMOVE_HLA INT_VAR class = 5 STR_VAR remove_ability = ~AP_#0HLA_E~ END
+
 ACTION_IF FILE_EXISTS_IN_GAME ~CLABBA01.2DA~ BEGIN
 COPY_EXISTING ~CLABBA01.2DA~ OVERRIDE
   LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 STR_VAR f_Entry = AP_C0AC_00 END // Inspirations
